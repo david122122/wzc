@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: student-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
+  instance:
+    instance-id: student-server-8080
+    prefer-ip-address: true
+
+info:
+  app.name: student-info
+  company.name: www.gwolf.com
+  build.artifactId: $project.artifactId$
+  build.version:  $project.version$
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000

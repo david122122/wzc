@@ -23,10 +23,12 @@ public class StudentController {
     @HystrixCommand(fallbackMethod = "timeOutMethod")
     public Student studentByName(String name){
         //int i=1/0;
+        int j=0;
         int i=1;
         while(i>0){
 
         }
+        System.out.println("aa");
         return new Student(111,name,23,"bj","1");
     }
 

@@ -25,6 +25,7 @@ public class StudentController {
         //int i=1/0;
         int j=0;
         int i=1;
+        int w = 1;
         while(i>0){
 
         }

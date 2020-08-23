@@ -29,6 +29,7 @@ public class StudentController {
 
         }
         System.out.println("aa");
+        System.out.println("bb");
         return new Student(111,name,23,"bj","1");
     }
 
